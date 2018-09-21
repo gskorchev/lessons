@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	table tr td, table tr th{
+		border: 1px solid black;
+	}
+		thead th {
+			background-color: green;
+			color: white;
+		}
+		tbody tr:nth-child(2n){
+			background-color: lightgray;
+		}
+	</style>
+</head>
+<body>
+	<table cellspacing="0">
+		<thead>
+			<tr>
+				<th>Contact Name</th>
+				<th>City</th>
+				<th>Country</th>
+				<th>Is Promoted</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Maria Anders</td>
+				<td>Berlin</td>
+				<td>Germany</td>
+				<td><input type="checkbox" name="is_promoted"></td>
+			</tr>
+			<tr>
+				<td>Ana Trujillo</td>
+				<td>Mexico D.F.</td>
+				<td>Mexico</td>
+				<td><input type="checkbox" name="is_promoted1"></td>
+			</tr>
+			<tr>
+				<td>Antonio Moreno</td>
+				<td>Mexico D.F.</td>
+				<td>Mexico</td>
+				<td><input type="checkbox" name="is_promoted2" checked="checked"></td>
+			</tr>
+			<tr>
+				<td>Thomas Hardy</td>
+				<td>London</td>
+				<td>UK</td>
+				<td><input type="checkbox" name="is_promoted3"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

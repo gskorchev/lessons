@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration form</title>
+	<style>
+		table, th, td {
+			border: 1px solid gray;
+			border-spacing: 0;
+		}
+		tr td:first-child {
+			font-weight: bolder;
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<form action="post">
+			<table>
+				<tfoot>
+					<tr>
+						<td colspan="4" style="text-align: center"><input type="submit" value="Submit" style="margin-right: 10px"><input type="submit" value="Clear this Form"></td>
+						
+					</tr>
+				</tfoot>
+				<tr>
+					<td>Last Name</td>
+					<td colspan="3"><input type="text" name="last_name" style="width: 90%"></td>
+				</tr>
+				<tr>
+					<td>First Name</td>
+					<td colspan="3"><input type="text" name"first_name" style="width: 90%"></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td colspan="3"><textarea name="address" id="" cols="30" rows="4"></textarea></td>
+				</tr>
+				<tr>
+					<td>City</td>
+					<td><input type="text" name"City"> 
+						<td>State</td><td><input type="text" name"City" maxlength="3" size="3"></td></td>
+				</tr>
+				<tr>
+					<td>Zip/Postal Code</td>
+					<td colspan="3"><input type="text" name="zipCode" size="4"></td>
+				</tr>
+				<tr>
+					<td><label for="country">Country</label></td>
+            <td colspan="3">
+                <select id="country">
+                    <option value="BG">Bulgaria</option>
+                </select>
+            </td>
+				</tr>
+				<tr>
+					<td>Phone (country code, <br/>area code, number)</td>
+					<td colspan="3">(+<input type="number" name="phone" min="0" max="999">) <input type="number" name="phone" min="0" max="99"> <input type="number" name="phone" min="0" max="999999">
+				</tr>
+				<tr>
+					<td>E-mail</td>
+					<td colspan="3"><input type="email" name"email" placeholder="example@mail.com"></td>
+				</tr>
+					<tr>
+					<td>Birth date</td>
+					<td colspan="3">Month<input type="text" name="birtd_date" maxlength="2" size="2"> Date<input type="text" name="birtd_date" maxlength="2" size="2"> Year<input type="text" name="birtd_date" maxlength="4" size="4"></td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td><select id="Gender">
+						<option value="male" >Male</option>
+						<option value="female" >Female</option>
+					</select>
+				</td>
+				</tr>
+				<tr>
+					<td>Starting date</td>
+					<td colspan="3"><label for="spring01">Spring 2016</label><input type="radio" name="season" value="spring" id="spring01"> <label for="season01">Summer 2016</label><input type="radio" name="season" value="summer" id="season01"></td>
+				</tr>
+			</table>
+	</form>
+</body>
+</html>
